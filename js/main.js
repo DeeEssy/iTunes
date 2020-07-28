@@ -1,16 +1,9 @@
-import {
-    radioPlayerInit
-} from "./radioPlayer.js"
+'use strict'
+import { radioPlayerInit } from "./radioPlayer.js";
+import { videoPlayerInit } from "./videoPlayer.js";
+import { musicPlayerInit } from "./musicPlayer.js";
 
-import {
-    videoPlayerInit
-}
-from "./videoPlayer.js"
-
-import {
-    musicPlayerInit
-}
-from "./musicPlayer.js"
+videoPlayerInit()
 
 const playerBtn = document.querySelectorAll('.player-btn'),
     playerBlock = document.querySelectorAll('.player-block'),
