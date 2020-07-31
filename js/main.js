@@ -19,6 +19,10 @@ const deactivatianPlayer = () => {
     playerBlock.forEach(item => {
         item.classList.remove('active')
     })
+
+    musicPlayerInit.stop()
+    videoPlayerInit.stop()
+    radioPlayerInit.stop()
 }
 
 playerBtn.forEach((btn, index) => {
